@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html>
+<title>Abbinaya sri</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  
+  body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  #custom-header {
+    font-size: 2.5em;
+    margin-bottom: 0;
+  }
+
+  .w3-row-padding img {
+    margin-bottom: 12px;
+  }
+
+  .w3-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 40%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('finalport.jpg');
+  }
+
+  /* Remove margin from the About section */
+  #about {
+    margin-top: 0;
+    padding-top: 0;
+  }
+</style>
+
+<body>
+
+<!-- Sidebar with background image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small">
+  <!-- Sidebar is now set as a background, no need for an <img> tag -->
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="#soft-skills" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Soft skills</a>
+    <a href="#achievements" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Achievements</a>
+    <a href="#education" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Education</a>
+    <a href="#technical-skills" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Technical skills</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:64px 16px 0;" id="home">
+    <h1 id="custom-header"><b>Hi, My name is Abbinaya Sri</b></h1>
+    <p>Emerging Designer & Innovator.</p>
+    <img src="c:\Users\Abbinaya Sri S\Desktop\design works\My logo1.png" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="c:\Users\Abbinaya Sri S\Desktop\design works\My logo1.png" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>About</h2>
+    <hr class="w3-opacity">
+    <p>
+      I am Abbinaya Sri, currently pursuing a B.E. in Computer Science and Design at Kongu Engineering College.I am passionate about combining creativity and technology to develop innovative solutions.My goal is to contribute meaningfully to projects with originality and creativity in every project I work on.
+
+      I aspire to obtain a creative and challenging position in an organization that provides opportunities for self-improvement and leadership, while contributing to the growth of the organization through my technical, innovative, and logical skills.
+    </p>
+  </div>
+
+<!-- Soft Skills Section with Black Outer Grid, Equal Padding, and Equal Alignment -->
+<div class="w3-content w3-justify w3-text-grey w3-padding-32" id="soft-skills">
+  <h2>Soft Skills</h2>
+  <hr class="w3-opacity">
+  <div class="w3-row-padding" style="margin:0 -16px;">
+    <div class="w3-third w3-padding-large w3-border w3-border-grey w3-center" style="height:130px; display:flex; align-items:center; justify-content:center;">
+      <p>GOOD COMMUNICATION SKILLS</p>
+    </div>
+    <div class="w3-third w3-padding-large w3-border w3-border-grey w3-center" style="height:130px; display:flex; align-items:center; justify-content:center;">
+      <p>VERY MUCH INTERESTED IN DESIGNING</p>
+    </div>
+    <div class="w3-third w3-padding-large w3-border w3-border-grey w3-center" style="height:130px; display:flex; align-items:center; justify-content:center;">
+      <p>CREATIVE THINKER</p>
+    </div>
+  </div>
+</div>
+
+<!-- Achievements Section with Flip Cards and Vertical Layout -->
+<div class="w3-content w3-justify w3-text-grey w3-padding-32" id="achievements">
+  <h2>Achievements</h2>
+  <hr class="w3-opacity">
+
+  <!-- Flip Card Container -->
+  <div class="w3-row-padding w3-padding-16">
+
+    <!-- Flip Card 1 -->
+    <div class="w3-margin-bottom">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front w3-border w3-padding-large w3-center">
+            <i class="fa fa-trophy w3-xxlarge w3-text-yellow"></i>
+            <p class="w3-large">1st prize <br>SIH-Internal Hackathon 2023</p>
+            <p><em></em></p>
+          </div>
+          <div class="flip-card-back w3-border w3-padding-large w3-center">
+            <p>Participated and won first prize at the college level of the prestigious Smart India Hackathon.
+              Worked on creating a Virtual Zoo for kids, designed to enhance education through immersive AR/VR experiences under the Smart Education category.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flip Card 2 -->
+    <div class="w3-margin-bottom">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front w3-border w3-padding-large w3-center">
+            <i class="fa fa-certificate w3-xxlarge w3-text-blue"></i>
+            <p class="w3-large">Completion of two phases of Metaverse workshop</p>
+            <p><em></em></p>
+          </div>
+          <div class="flip-card-back w3-border w3-padding-large w3-center">
+            <p>Successfully completed Phase 1 and Phase 2 of Creators of Metaverse Student Program, a-month long Augmented Reality learning and workplace experience in the academic year 2023-24 to create basic to advanced level AR projects using Meta Spark Studio, to be part of the next-generation of AR Creators of India.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flip Card 3 -->
+    <div class="w3-margin-bottom">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front w3-border w3-padding-large w3-center">
+            <i class="fa fa-lightbulb-o w3-xxlarge w3-text-orange"></i>
+            <p class="w3-large">1st prize<br>Ideathon-Kongu engineering college</p>
+            <p><em></em></p>
+          </div>
+          <div class="flip-card-back w3-border w3-padding-large w3-center">
+            <p>Won first prize in the Ideathon conducted by the CSD department of KEC.
+              Developed an IoT Automated Object Recognition Glass designed to assist the visually impaired by identifying and recognizing objects in their surroundings.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flip Card 4 -->
+    <div class="w3-margin-bottom">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front w3-border w3-padding-large w3-center">
+            <i class="fa fa-graduation-cap w3-xxlarge w3-text-green"></i>
+            <p class="w3-large">Certificate of experience<br>Design Scholar Intern</p>
+            <p><em></em></p>
+          </div>
+          <div class="flip-card-back w3-border w3-padding-large w3-center">
+            <p>successfully completed the 6-month Chalkpiece Design Scholars 
+              Program focused on UX/UI Design, under the mentorship of experienced 
+              design professionals. Awarded by Chalkpiece Design education Trust, 
+              empowering creativity and innovation through design education.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Add this CSS for Flip Animation -->
+<style>
+  .flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 200px;
+    perspective: 1000px; /* Remove for 2D effect */
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card-front {
+  background-color: #f1f1f1;
+  color: black;
+  display: flex;
+  justify-content: center; /* Horizontal center */
+  align-items: center; /* Vertical center */
+  text-align: center; /* Ensures text is centered */
+  flex-direction: column; /* Stack content vertically */
+}
+
+  .flip-card-back {
+  background-color: #008080;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center; /* Horizontal center */
+  align-items: center; /* Vertical center */
+  text-align: center; /* Ensures text is centered */
+}
+
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg); /* Flip on hover or tap */
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    background-color: #f1f1f1;
+    color: black;
+  }
+
+  .flip-card-back {
+    background-color: #008080;
+    color: white;
+    transform: rotateY(180deg);
+  }
+</style>
+
+<!-- Education Section with Vertical Timeline -->
+<div class="w3-content w3-justify w3-text-grey w3-padding-32" id="education">
+  <h2>Education</h2>
+  <hr class="w3-opacity">
+
+  <div class="timeline-container">
+
+    <!-- Education Entry 1 -->
+    <div class="timeline-entry">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3>B.E. in Computer Science and Design</h3>
+        <p><b>Institution:</b> Kongu Engineering College</p>
+        <p><b>Year:</b> 2022 - 2026</p>
+        <p><b>CGPA:</b> 8.55</p>
+      </div>
+    </div>
+
+    <!-- Education Entry 2 -->
+    <div class="timeline-entry">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3>Higher Secondary Certificate(HSC)</h3>
+        
+        <p><b>Year:</b> 2021 - 2022</p>
+        <p><b>Percentage:</b> 93%</p>
+      </div>
+    </div>
+
+    <!-- Education Entry 3 -->
+    <div class="timeline-entry">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3>Secondary School leaving Certificate(SSLC)</h3>
+        
+        <p><b>Year:</b> 2019 - 2020</p>
+        <p><b>Percentage:</b> 85%</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Add this CSS for Vertical Timeline -->
+<style>
+  /* Timeline Container */
+  .timeline-container {
+    position: relative;
+    margin-left: 20px; 
+    padding-left: 10px; 
+  }
+
+  /* Timeline Entry */
+  .timeline-entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+  }
+
+  /* Vertical Line */
+  .timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 15px; 
+    top: 0;
+    bottom: 0;
+    width: 2px; 
+    background-color: #008080; 
+  }
+
+  /* Timeline Dot */
+  .timeline-dot {
+    width: 10px; 
+    height: 10px; 
+    background-color: #008080;
+    border-radius: 50%;
+    margin-right: 10px; 
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Horizontal Line */
+  .timeline-entry::before {
+    content: '';
+    position: absolute;
+    left: 25px; 
+    width: 10px; 
+    height: 1px; 
+    background-color: #008080;
+  }
+
+  /* Timeline Content */
+  .timeline-content {
+    background-color: #f1f1f1;
+    padding: 10px; 
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    width: 70%; 
+  }
+
+  /* Heading Style */
+  .timeline-content h3 {
+    margin: 0; 
+    font-size: 1.2em; 
+  }
+
+  /* Text Style */
+  .timeline-content p {
+    margin: 2px 0;
+    font-size: 0.9em; 
+  }
+</style>
+
+
+<!-- Technical Skills Section -->
+<div class="w3-content w3-justify w3-text-grey w3-padding-32" id="technical-skills">
+  <h2>Technical Skills</h2>
+  <hr class="w3-opacity">
+
+  <!-- Skill Bars -->
+  <div class="w3-row-padding" style="margin:0 -16px;">
+
+    <!-- Programming Languages -->
+    <div class="w3-container">
+      <p>Programming Languages (C, Python, Java, JavaScript)</p>
+      <div class="w3-light-grey w3-round-xlarge">
+        <div class="w3-container w3-round-xlarge" style="width:65%; background-color: teal;color:white">65%</div>
+      </div>
+    </div>
+
+    <!-- Web Development -->
+    <div class="w3-container">
+      <p>Web Development (HTML, CSS, Bootstrap, React, JavaScript)</p>
+      <div class="w3-light-grey w3-round-xlarge">
+        <div class="w3-container w3-round-xlarge" style="width:70%; background-color: teal;color:white">70%</div>
+      </div>
+    </div>
+
+    <!-- Designing -->
+    <div class="w3-container">
+      <p>Designing (UI/UX, Illustrator, Figma, Blender, Unity)</p>
+      <div class="w3-light-grey w3-round-xlarge">
+        <div class="w3-container w3-round-xlarge" style="width:85%; background-color: teal;color:white">85%</div>
+      </div>
+    </div>
+    <!-- Database -->
+    <div class="w3-container">
+      <p>Database (SQL, MongoDB, Firebase)</p>
+      <div class="w3-light-grey w3-round-xlarge">
+        <div class="w3-container w3-round-xlarge" style="width:70%; background-color: teal;color:white">70%</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Projects Section -->
+<div class="w3-content w3-justify w3-text-grey w3-padding-32" id="technical-skills">
+  <h2>Projects</h2>
+  <hr class="w3-opacity">
+
+  <!-- Project List -->
+  <div class="w3-row-padding" style="margin:0 -16px;">
+
+    <!-- Project 1 -->
+    <div class="w3-container w3-margin-bottom">
+      <h3>Fitness Tracker Website</h3>
+      <p>
+        A full-stack fitness tracker application built using React, Node.js, Firebase, and MongoDB. 
+        Includes features like workout plans, daily challenges, and user profile management.
+      </p>
+      <p><strong>Technologies:</strong> React, Node.js, Firebase, JavaScript</p>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="w3-container w3-margin-bottom">
+      <h3>AR Virtual Zoo</h3>
+      <p>
+        An augmented reality application to visualize and interact with 3D models of animals. 
+        Designed for students to learn about animal behaviors in a virtual environment.
+      </p>
+      <p><strong>Technologies:</strong> Unity, Blender, C#, ARKit</p>
+    </div>
+
+    <div class="w3-container w3-margin-bottom">
+      <h3>Design Toolkit</h3>
+      <p>
+        Developed a comprehensive design toolkit during a six-month internship to assist teachers in educating kids, teenagers, and adults. 
+        The toolkit includes resources and activities tailored to different age groups, enabling interactive and engaging learning experiences.
+      </p>
+      <p><strong>Technologies:</strong> Figma, Canva, UI/UX Design, Research, Prototyping</p>
+    </div>
+    
+
+  </div>
+</div>
+
+
+
+
+
+<!-- Design Portfolio Section -->
+<div class="portfolio-container" id="portfolio">
+  <h2>Design Portfolio</h2>
+  <hr class="w3-opacity">
+  <p>Here are some of the design projects I've worked on, showcasing my skills and creativity in UI/UX, graphic design, and 3D modeling.</p>
+
+  <!-- Portfolio Grid -->
+  <div class="portfolio-grid">
+    <!-- Portfolio Item 1 -->
+    <div class="portfolio-item">
+      <div class="w3-card w3-hover-shadow portfolio-card">
+        <img src="Roominterior.png" alt="Project 1" class="portfolio-image">
+        <div class="w3-container portfolio-content">
+          <h3>INTERIOR MODEL</h3>
+          <p class="w3-opacity"></p>
+          <p>This interior model was created using Blender, showcasing innovative design and realistic rendering techniques. The project highlights creativity and attention to detail in 3D visualization.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Item 2 -->
+    <div class="portfolio-item">
+      <div class="w3-card w3-hover-shadow portfolio-card">
+        <img src="Screenshot (863).png" alt="Project 2" class="portfolio-image">
+        <div class="w3-container portfolio-content">
+          <h3>AR-Markerbased</h3>
+          <p class="w3-opacity"></p>
+          <p>This AR-based model was created using Vuforia, combining augmented reality with interactive design elements to enhance user engagement.</p>
+    
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Item 3 -->
+    <div class="portfolio-item">
+      <div class="w3-card w3-hover-shadow portfolio-card">
+        <img src="Screenshot (441).png" alt="Project 3" class="portfolio-image">
+        <div class="w3-container portfolio-content">
+          <h3>3D MODEL</h3>
+          <p class="w3-opacity"></p>
+          <p>This 3D donut model was created using Blender, showcasing my skills in modeling, texturing, and lighting techniques.</p>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Item 4 -->
+    <div class="portfolio-item">
+      <div class="w3-card w3-hover-shadow portfolio-card">
+        <img src="2.png" alt="Project 4" class="portfolio-image">
+        <div class="w3-container portfolio-content">
+          <h3>LOGO DESIGN</h3>
+          <p class="w3-opacity"></p>
+          <p>This logo was created for a product that extracts paper from banana stem cells, highlighting sustainability and innovation in eco-friendly design.</p>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Item 5 -->
+    <div class="portfolio-item">
+      <div class="w3-card w3-hover-shadow portfolio-card">
+        <img src="Screenshot (748).png" alt="Project 5" class="portfolio-image">
+        <div class="w3-container portfolio-content">
+          <h3>APP UI</h3>
+          <p class="w3-opacity"></p>
+          <p>This UI design is a replication of a weather app, showcasing my skills in user interface design and attention to functionality and aesthetics.</p>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Item 6 -->
+    <div class="portfolio-item">
+      <div class="w3-card w3-hover-shadow portfolio-card">
+        <img src="Screenshot (752).png" alt="Project 6" class="portfolio-image">
+        <div class="w3-container portfolio-content">
+          <h3>REALTIME REPLICATION MODEL</h3>
+          <p class="w3-opacity"></p>
+          <p>This project showcases a real-time replication of a 3D railway station entrance model, design for realistic visual effects and immersive experience.</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CSS for Smaller Rectangle Cards -->
+<style>
+  .portfolio-container {
+  padding: 32px;
+  color: grey;
+  text-align: center;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Makes it responsive */
+  gap: 16px;
+  justify-items: center; /* Centers items in their grid cells */
+}
+
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Ensures the card stretches to fill the available space */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.portfolio-image {
+  width: 100%;
+  height: 180px; /* Fixed height for uniformity */
+  object-fit: cover;
+  object-position: center;
+}
+
+.portfolio-content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.portfolio-content h3 {
+  margin-top: 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.portfolio-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+  text-align: center; /* Centers the description text */
+}
+
+</style>
+
+
+<!-- Contact Section -->
+<div class="w3-content w3-justify w3-text-grey w3-padding-32" id="contact">
+  <h2>Contact</h2>
+  <hr class="w3-opacity">
+
+  <!-- Location -->
+  <div class="w3-container w3-margin-bottom" style="display: flex; align-items: center;">
+    <i class="fa fa-map-marker" style="font-size: 30px; color: teal; margin-right: 10px;"></i>
+    <p style="margin: 0;"><strong>Location:</strong> Tirupur-641 603</p>
+  </div>
+
+  <!-- Gmail -->
+  <div class="w3-container" style="display: flex; align-items: center;">
+    <i class="fa fa-envelope" style="font-size: 24px; color: teal; margin-right: 10px;"></i>
+    <p style="margin: 0;"><strong>Email:</strong> <a style="color: ; text-decoration: none;">abbinayasri24@gmail.com</a></p>
+  </div>
+</div>
+
+
+
+ 
+
+  <!-- Footer -->
+  <!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+  <a href="https://github.com/Abbinayasri" target="_blank" class="w3-hover-opacity" style="margin-right: 15px; text-decoration: none;">
+    <i class="fa fa-github"></i>
+  </a>
+  <a href="https://www.behance.net/abbinayasris" target="_blank" class="w3-hover-opacity" style="margin-right: 15px; text-decoration: none;">
+    <i class="fa fa-behance"></i>
+  </a>
+  <a href="https://dribbble.com/abbinaya_sri" target="_blank" class="w3-hover-opacity" style="margin-right: 15px; text-decoration: none;">
+    <i class="fa fa-dribbble"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/abbinaya-sri-s-725244259/" target="_blank" class="w3-hover-opacity" style="text-decoration: none;">
+    <i class="fa fa-linkedin"></i>
+  </a>
+</footer>
+
+
+<!-- END PAGE CONTENT -->
+</div>
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
