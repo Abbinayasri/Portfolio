@@ -21,18 +21,6 @@
     margin-bottom: 12px;
   }
 
-  /* .w3-sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 40%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url('finalport.jpg');
-  } */
-
   .w3-sidebar {
     position: fixed;
     top: 0;
@@ -44,95 +32,376 @@
     background-repeat: no-repeat;
     background-image: url('finalport.jpg');
     background-attachment: fixed;
-}
+  }
 
-/* Mobile styles (up to 600px) */
-@media screen and (max-width: 600px) {
+  /* Mobile styles (up to 600px) */
+  @media screen and (max-width: 600px) {
     .w3-sidebar {
-        width: 100% !important;
-        height: 250px !important;
-        position: relative !important;
-        background-attachment: scroll;
-        background-position: center top;
-        background-size: cover;
+      width: 100% !important;
+      height: 200px !important;
+      position: relative !important;
+      background-attachment: scroll;
+      background-position: center top;
+      background-size: cover;
     }
     
     /* Reset main content margin for mobile */
     .w3-main {
-        margin-left: 0 !important;
-        margin-top: 250px !important;
+      margin-left: 0 !important;
+      margin-top: 0 !important;
     }
-}
+    
+    /* Mobile header adjustments */
+    #custom-header {
+      font-size: 1.8em !important;
+      padding: 10px !important;
+    }
+    
+    /* Mobile navigation adjustments */
+    .w3-sidebar.w3-animate-right {
+      width: 100% !important;
+      right: 0 !important;
+    }
+    
+    /* Mobile content padding */
+    .w3-content {
+      padding: 16px !important;
+    }
+    
+    /* Mobile soft skills grid */
+    .w3-third {
+      width: 100% !important;
+      margin-bottom: 16px !important;
+    }
+    
+    /* Mobile flip cards */
+    .flip-card {
+      height: auto !important;
+      min-height: 160px;
+    }
+    
+    /* Mobile timeline adjustments */
+    .timeline-container {
+      margin-left: 10px !important;
+    }
+    
+    .timeline-content {
+      width: 85% !important;
+      font-size: 0.9em;
+    }
+    
+    /* Mobile portfolio grid */
+    .portfolio-grid {
+      grid-template-columns: 1fr !important;
+      gap: 16px;
+    }
+    
+    .portfolio-image {
+      height: 200px !important;
+    }
+    
+    /* Mobile technical skills */
+    .w3-container p {
+      font-size: 0.9em;
+      margin-bottom: 8px;
+    }
+    
+    /* Mobile contact section */
+    .w3-container[style*="display: flex"] {
+      flex-direction: column !important;
+      align-items: flex-start !important;
+    }
+    
+    .w3-container[style*="display: flex"] i {
+      margin-bottom: 5px !important;
+    }
+  }
 
-/* Small tablets (601px to 768px) */
-@media screen and (min-width: 601px) and (max-width: 768px) {
+  /* Small tablets (601px to 768px) */
+  @media screen and (min-width: 601px) and (max-width: 768px) {
     .w3-sidebar {
-        width: 35% !important;
-        background-attachment: scroll;
+      width: 35% !important;
+      background-attachment: scroll;
     }
     
     .w3-main {
-        margin-left: 35% !important;
+      margin-left: 35% !important;
     }
-}
+    
+    #custom-header {
+      font-size: 2.2em;
+    }
+    
+    .portfolio-grid {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+    
+    .w3-third {
+      width: 48% !important;
+      margin-bottom: 16px;
+    }
+  }
 
-/* Medium tablets (769px to 992px) */
-@media screen and (min-width: 769px) and (max-width: 992px) {
+  /* Medium tablets (769px to 992px) */
+  @media screen and (min-width: 769px) and (max-width: 992px) {
     .w3-sidebar {
-        width: 38% !important;
+      width: 38% !important;
     }
     
     .w3-main {
-        margin-left: 38% !important;
+      margin-left: 38% !important;
     }
-}
+    
+    .portfolio-grid {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+  }
 
-/* Large screens (993px and up) */
-@media screen and (min-width: 993px) {
+  /* Large screens (993px and up) */
+  @media screen and (min-width: 993px) {
     .w3-sidebar {
-        width: 40%;
+      width: 40%;
     }
     
     .w3-main {
-        margin-left: 40% !important;
+      margin-left: 40% !important;
     }
-}
+  }
 
-/* Additional mobile optimizations */
-@media screen and (max-width: 600px) {
-    /* Ensure background image loads efficiently on mobile */
-    .w3-sidebar {
-        background-image: url('finalport.jpg');
-        /* You can also use a smaller mobile version if available */
-        /* background-image: url('finalport-mobile.jpg'); */
-    }
-    
+  /* Additional mobile optimizations */
+  @media screen and (max-width: 600px) {
     /* Hide sidebar content if it contains navigation on mobile */
     .w3-sidebar .w3-bar-block {
-        display: none;
+      display: none;
     }
     
     /* Show mobile navigation instead */
     .mobile-nav {
-        display: block !important;
+      display: block !important;
     }
-}
+    
+    /* Ensure text is readable on mobile */
+    body {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    
+    h2 {
+      font-size: 1.5em !important;
+    }
+    
+    h3 {
+      font-size: 1.2em !important;
+    }
+    
+    /* Mobile button adjustments */
+    .w3-button {
+      padding: 12px 16px !important;
+      font-size: 16px !important;
+    }
+    
+    /* Mobile menu icon */
+    .w3-button.w3-top {
+      position: fixed !important;
+      top: 10px !important;
+      right: 10px !important;
+      z-index: 999 !important;
+    }
+  }
 
-/* Hide mobile nav on larger screens */
-.mobile-nav {
+  /* Hide mobile nav on larger screens */
+  .mobile-nav {
     display: none;
-}
+  }
 
-/* Performance optimization for all devices */
-.w3-sidebar {
+  /* Performance optimization for all devices */
+  .w3-sidebar {
     will-change: transform;
     backface-visibility: hidden;
-}
+  }
 
   /* Remove margin from the About section */
   #about {
     margin-top: 0;
     padding-top: 0;
+  }
+
+  /* Flip Card Styles */
+  .flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 200px;
+    perspective: 1000px;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card-front {
+    background-color: #f1f1f1;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .flip-card-back {
+    background-color: #008080;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  /* Timeline Styles */
+  .timeline-container {
+    position: relative;
+    margin-left: 20px; 
+    padding-left: 10px; 
+  }
+
+  .timeline-entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+  }
+
+  .timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 15px; 
+    top: 0;
+    bottom: 0;
+    width: 2px; 
+    background-color: #008080; 
+  }
+
+  .timeline-dot {
+    width: 10px; 
+    height: 10px; 
+    background-color: #008080;
+    border-radius: 50%;
+    margin-right: 10px; 
+    position: relative;
+    z-index: 1;
+  }
+
+  .timeline-entry::before {
+    content: '';
+    position: absolute;
+    left: 25px; 
+    width: 10px; 
+    height: 1px; 
+    background-color: #008080;
+  }
+
+  .timeline-content {
+    background-color: #f1f1f1;
+    padding: 10px; 
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    width: 70%; 
+  }
+
+  .timeline-content h3 {
+    margin: 0; 
+    font-size: 1.2em; 
+  }
+
+  .timeline-content p {
+    margin: 2px 0;
+    font-size: 0.9em; 
+  }
+
+  /* Portfolio Styles */
+  .portfolio-container {
+    padding: 32px;
+    color: grey;
+    text-align: center;
+  }
+
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+    justify-items: center;
+  }
+
+  .portfolio-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .portfolio-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .portfolio-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .portfolio-content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    text-align: left;
+  }
+
+  .portfolio-content h3 {
+    margin-top: 0;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .portfolio-content p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+  }
+
+  /* Mobile-specific portfolio adjustments */
+  @media screen and (max-width: 600px) {
+    .portfolio-content h3 {
+      font-size: 16px !important;
+    }
+    
+    .portfolio-content p {
+      font-size: 13px !important;
+    }
   }
 </style>
 
@@ -282,69 +551,6 @@
   </div>
 </div>
 
-
-<!-- Add this CSS for Flip Animation -->
-<style>
-  .flip-card {
-    background-color: transparent;
-    width: 100%;
-    height: 200px;
-    perspective: 1000px; /* Remove for 2D effect */
-  }
-
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-
-  .flip-card-front {
-  background-color: #f1f1f1;
-  color: black;
-  display: flex;
-  justify-content: center; /* Horizontal center */
-  align-items: center; /* Vertical center */
-  text-align: center; /* Ensures text is centered */
-  flex-direction: column; /* Stack content vertically */
-}
-
-  .flip-card-back {
-  background-color: #008080;
-  color: white;
-  transform: rotateY(180deg);
-  display: flex;
-  justify-content: center; /* Horizontal center */
-  align-items: center; /* Vertical center */
-  text-align: center; /* Ensures text is centered */
-}
-
-
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg); /* Flip on hover or tap */
-  }
-
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-
-  .flip-card-front {
-    background-color: #f1f1f1;
-    color: black;
-  }
-
-  .flip-card-back {
-    background-color: #008080;
-    color: white;
-    transform: rotateY(180deg);
-  }
-</style>
-
 <!-- Education Section with Vertical Timeline -->
 <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="education">
   <h2>Education</h2>
@@ -387,77 +593,6 @@
 
   </div>
 </div>
-
-<!-- Add this CSS for Vertical Timeline -->
-<style>
-  /* Timeline Container */
-  .timeline-container {
-    position: relative;
-    margin-left: 20px; 
-    padding-left: 10px; 
-  }
-
-  /* Timeline Entry */
-  .timeline-entry {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px; 
-  }
-
-  /* Vertical Line */
-  .timeline-container::before {
-    content: '';
-    position: absolute;
-    left: 15px; 
-    top: 0;
-    bottom: 0;
-    width: 2px; 
-    background-color: #008080; 
-  }
-
-  /* Timeline Dot */
-  .timeline-dot {
-    width: 10px; 
-    height: 10px; 
-    background-color: #008080;
-    border-radius: 50%;
-    margin-right: 10px; 
-    position: relative;
-    z-index: 1;
-  }
-
-  /* Horizontal Line */
-  .timeline-entry::before {
-    content: '';
-    position: absolute;
-    left: 25px; 
-    width: 10px; 
-    height: 1px; 
-    background-color: #008080;
-  }
-
-  /* Timeline Content */
-  .timeline-content {
-    background-color: #f1f1f1;
-    padding: 10px; 
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-    width: 70%; 
-  }
-
-  /* Heading Style */
-  .timeline-content h3 {
-    margin: 0; 
-    font-size: 1.2em; 
-  }
-
-  /* Text Style */
-  .timeline-content p {
-    margin: 2px 0;
-    font-size: 0.9em; 
-  }
-</style>
-
 
 <!-- Technical Skills Section -->
 <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="technical-skills">
@@ -502,7 +637,7 @@
 </div>
 
 <!-- Projects Section -->
-<div class="w3-content w3-justify w3-text-grey w3-padding-32" id="technical-skills">
+<div class="w3-content w3-justify w3-text-grey w3-padding-32" id="projects">
   <h2>Projects</h2>
   <hr class="w3-opacity">
 
@@ -537,14 +672,9 @@
       </p>
       <p><strong>Technologies:</strong> Figma, Canva, UI/UX Design, Research, Prototyping</p>
     </div>
-    
 
   </div>
 </div>
-
-
-
-
 
 <!-- Design Portfolio Section -->
 <div class="portfolio-container" id="portfolio">
@@ -633,69 +763,6 @@
   </div>
 </div>
 
-<!-- CSS for Smaller Rectangle Cards -->
-<style>
-  .portfolio-container {
-  padding: 32px;
-  color: grey;
-  text-align: center;
-}
-
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Makes it responsive */
-  gap: 16px;
-  justify-items: center; /* Centers items in their grid cells */
-}
-
-.portfolio-item {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.portfolio-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%; /* Ensures the card stretches to fill the available space */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.portfolio-image {
-  width: 100%;
-  height: 180px; /* Fixed height for uniformity */
-  object-fit: cover;
-  object-position: center;
-}
-
-.portfolio-content {
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-grow: 1;
-  text-align: left;
-}
-
-.portfolio-content h3 {
-  margin-top: 0;
-  font-size: 18px;
-  text-align: center;
-}
-
-.portfolio-content p {
-  margin: 0;
-  font-size: 14px;
-  color: #666;
-  text-align: center; /* Centers the description text */
-}
-
-</style>
-
-
 <!-- Contact Section -->
 <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="contact">
   <h2>Contact</h2>
@@ -703,53 +770,4 @@
 
   <!-- Location -->
   <div class="w3-container w3-margin-bottom" style="display: flex; align-items: center;">
-    <i class="fa fa-map-marker" style="font-size: 30px; color: teal; margin-right: 10px;"></i>
-    <p style="margin: 0;"><strong>Location:</strong> Tirupur-641 603</p>
-  </div>
-
-  <!-- Gmail -->
-  <div class="w3-container" style="display: flex; align-items: center;">
-    <i class="fa fa-envelope" style="font-size: 24px; color: teal; margin-right: 10px;"></i>
-    <p style="margin: 0;"><strong>Email:</strong> <a style="color: ; text-decoration: none;">abbinayasri24@gmail.com</a></p>
-  </div>
-</div>
-
-
-
- 
-
-  <!-- Footer -->
-  <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
-  <a href="https://github.com/Abbinayasri" target="_blank" class="w3-hover-opacity" style="margin-right: 15px; text-decoration: none;">
-    <i class="fa fa-github"></i>
-  </a>
-  <a href="https://www.behance.net/abbinayasris" target="_blank" class="w3-hover-opacity" style="margin-right: 15px; text-decoration: none;">
-    <i class="fa fa-behance"></i>
-  </a>
-  <a href="https://dribbble.com/abbinaya_sri" target="_blank" class="w3-hover-opacity" style="margin-right: 15px; text-decoration: none;">
-    <i class="fa fa-dribbble"></i>
-  </a>
-  <a href="https://www.linkedin.com/in/abbinaya-sri-s-725244259/" target="_blank" class="w3-hover-opacity" style="text-decoration: none;">
-    <i class="fa fa-linkedin"></i>
-  </a>
-</footer>
-
-
-<!-- END PAGE CONTENT -->
-</div>
-
-<script>
-// Open and close sidebar
-function openNav() {
-  document.getElementById("mySidebar").style.width = "60%";
-  document.getElementById("mySidebar").style.display = "block";
-}
-
-function closeNav() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-</script>
-
-</body>
-</html>
+    <i class
