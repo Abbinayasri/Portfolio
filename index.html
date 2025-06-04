@@ -21,6 +21,18 @@
     margin-bottom: 12px;
   }
 
+  /* .w3-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 40%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('finalport.jpg');
+  } */
+
   .w3-sidebar {
     position: fixed;
     top: 0;
@@ -31,7 +43,91 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url('finalport.jpg');
-  }
+    background-attachment: fixed;
+}
+
+/* Mobile styles (up to 600px) */
+@media screen and (max-width: 600px) {
+    .w3-sidebar {
+        width: 100% !important;
+        height: 250px !important;
+        position: relative !important;
+        background-attachment: scroll;
+        background-position: center top;
+        background-size: cover;
+    }
+    
+    /* Reset main content margin for mobile */
+    .w3-main {
+        margin-left: 0 !important;
+        margin-top: 250px !important;
+    }
+}
+
+/* Small tablets (601px to 768px) */
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    .w3-sidebar {
+        width: 35% !important;
+        background-attachment: scroll;
+    }
+    
+    .w3-main {
+        margin-left: 35% !important;
+    }
+}
+
+/* Medium tablets (769px to 992px) */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .w3-sidebar {
+        width: 38% !important;
+    }
+    
+    .w3-main {
+        margin-left: 38% !important;
+    }
+}
+
+/* Large screens (993px and up) */
+@media screen and (min-width: 993px) {
+    .w3-sidebar {
+        width: 40%;
+    }
+    
+    .w3-main {
+        margin-left: 40% !important;
+    }
+}
+
+/* Additional mobile optimizations */
+@media screen and (max-width: 600px) {
+    /* Ensure background image loads efficiently on mobile */
+    .w3-sidebar {
+        background-image: url('finalport.jpg');
+        /* You can also use a smaller mobile version if available */
+        /* background-image: url('finalport-mobile.jpg'); */
+    }
+    
+    /* Hide sidebar content if it contains navigation on mobile */
+    .w3-sidebar .w3-bar-block {
+        display: none;
+    }
+    
+    /* Show mobile navigation instead */
+    .mobile-nav {
+        display: block !important;
+    }
+}
+
+/* Hide mobile nav on larger screens */
+.mobile-nav {
+    display: none;
+}
+
+/* Performance optimization for all devices */
+.w3-sidebar {
+    will-change: transform;
+    backface-visibility: hidden;
+}
 
   /* Remove margin from the About section */
   #about {
@@ -373,7 +469,7 @@
 
     <!-- Programming Languages -->
     <div class="w3-container">
-      <p>Programming Languages (C, Java-Basics)</p>
+      <p>Programming Languages (C, Python-basics, java-basics)</p>
       <div class="w3-light-grey w3-round-xlarge">
         <div class="w3-container w3-round-xlarge" style="width:65%; background-color: teal;color:white">65%</div>
       </div>
@@ -381,7 +477,7 @@
 
     <!-- Web Development -->
     <div class="w3-container">
-      <p>Web Development (HTML, CSS, React, JavaScript)</p>
+      <p>Web Development (HTML, CSS, Bootstrap, React, JavaScript)</p>
       <div class="w3-light-grey w3-round-xlarge">
         <div class="w3-container w3-round-xlarge" style="width:70%; background-color: teal;color:white">70%</div>
       </div>
@@ -396,7 +492,7 @@
     </div>
     <!-- Database -->
     <div class="w3-container">
-      <p>Database (SQL)</p>
+      <p>Database (MySQL, MongoDB)</p>
       <div class="w3-light-grey w3-round-xlarge">
         <div class="w3-container w3-round-xlarge" style="width:70%; background-color: teal;color:white">70%</div>
       </div>
